@@ -24,22 +24,37 @@
                 <div class="bg-sky-200 p-6 rounded-lg">
                     <div class="grid grid-cols-3 justify-between items-center mb-5">
                         <div class="flex justify-between w-20 items-center">
-                            <p id="bold-btn" class="font-bold cursor-pointer text-2xl">B</p>
-                            <p id="italic-btn" class="italic text-2xl cursor-pointer">I</p>
-                            <p id="underline-btn" class="underline text-2xl cursor-pointer">U</p>
+                            <button id="bold-text" type="button">
+                                <i class="fa-solid fa-bold"></i>
+                            </button>
+                            <button id="italic-text" type="button">
+                                <i class="fa-solid fa-italic"></i>
+                            </button>
+                            <button id="underline-text" type="button">
+                                <i class="fa-solid fa-underline"></i>
+                            </button>
                         </div>
                         <div class="flex justify-between w-1/4 items-center">
-                            <i id="left-text" class="fa-solid fa-bars cursor-pointer"></i>
-                            <i id="center-text" class="fa-solid fa-bars cursor-pointer"></i>
-                            <i id="right-center" class="fa-solid fa-bars cursor-pointer"></i>
+                            <button id="left-text" type="button">
+                                <i class="fa-solid fa-align-left"></i>
+                            </button>
+                            <button id="center-text" type="button">
+                                <i class="fa-solid fa-align-center"></i>
+                            </button>
+                            <button id="right-text" onclick="f8(this)" type="button">
+                                <i class="fa-solid fa-align-right"></i>
+                            </button>
                         </div>
                         <div class="flex justify-between w-3/4 items-center">
-                            <input class="block w-16" type="number">
-                            <p id="uppercase-letter" class="cursor-pointer text-3xl"><span id="lowercase-letter" class="cursor-pointer">a</span>A</p>
-                            <input class="block w-28" type="color">
+                            <input id="change-font-size" onchange="f9(this)" class="block w-16 bg-sky-200 outline-none border-none text-2xl" type="number" min="1" max="100" value="17">
+                            <button id="uppercase-and-lowercase-text" type="button" class="text-2xl">aA</button>
+                            <button id="text-clear" type="button" class="text-2xl">
+                                <i class="fa-solid fa-text-slash"></i>
+                            </button>
+                            <input id="color-text" class="block w-28" type="color">
                         </div>
                     </div>
-                    <textarea name="" id="" class="outline-none" cols="154" rows="20"></textarea>
+                    <textarea id="textarea" class="outline-none w-full p-5 h-96" placeholder="You Enter Here"></textarea>
                 </div>
                 </div>
         </section>
